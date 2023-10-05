@@ -4,22 +4,20 @@ void	hidenp(char *str1, char *str2)
 {
 	int	i;
 	int	j;
-	
+
 	i = 0;
 	j = 0;
 	while (str1[i] && str2[j])
 	{
-	
-		if(str2[j] == str1[i])
+		if (str2[j] == str1[i])
 			i++;
 		j++;
-	}
+	}	
 	if (str1[i] == '\0')
 		write(1, "1", 1);
 	else
 		write(1, "0", 1);
-	write(1, "\n", 1);
-	
+	write(1, "\n", 1);		
 }
 
 int main(int argc, char **argv)
